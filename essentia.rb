@@ -21,7 +21,7 @@ class Essentia < Formula
   option "without-python", "Build without Python 3.9 support"
 
   depends_on "python@3.9" if build.with? "python"
-  depends_on "mtg/essentia/numpy@1.23.3" if build.with? "python"
+  depends_on "zumpchke/essentia/numpy@1.23.3" if build.with? "python"
 
   resource "six" do
     url "https://files.pythonhosted.org/packages/21/9f/b251f7f8a76dec1d6651be194dfba8fb8d7781d10ab3987190de8391d08e/six-1.14.0.tar.gz"
