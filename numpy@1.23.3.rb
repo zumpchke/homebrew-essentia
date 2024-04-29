@@ -7,7 +7,7 @@ class NumpyAT1233 < Formula
   head "https://github.com/numpy/numpy.git", branch: "main"
 
   depends_on "gcc" => :build # for gfortran
-  depends_on "mtg/essentia/libcython@0.29.30" => :build
+  depends_on "zumpchke/essentia/libcython@0.29.30" => :build
   # depends_on "python@3.10" => [:build, :test]
   depends_on "python@3.9" => [:build, :test]
   depends_on "openblas"
