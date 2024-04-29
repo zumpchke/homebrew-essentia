@@ -60,7 +60,7 @@ class Essentia < Formula
 
     if build.with? "python"
       site_packages = Language::Python.site_packages(Formula["python@3.9"].opt_libexec/"bin/python")
-      ENV.prepend_create_path "PYTHONPATH", Formula["mtg/essentia/numpy@1.23.3"].opt_prefix/site_packages
+      ENV.prepend_create_path "PYTHONPATH", Formula["zumpchke/essentia/numpy@1.23.3"].opt_prefix/site_packages
 
       system Formula["python@3.9"].opt_bin/"python3.9", "waf", "configure", *python_flags
       system Formula["python@3.9"].opt_bin/"python3.9", "waf"
